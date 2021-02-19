@@ -14,14 +14,18 @@
       font-family: Arial;
       padding: 10px;
       /* margen omkring tekst */
-      background: #f1f1f1;
+      background: #9DADB5;
     }
 
     /* Header/Blog Title */
     .header {
       padding: 30px;
       text-align: center;
-      background: rgb(17, 168, 141);
+      background: #;
+      background-image: url('blue.jpg');
+      max-height: 180px;
+      font-family: times;
+      color: white;
     }
 
     /* sætter h1 i header klassen til fontsize 50px*/
@@ -33,7 +37,7 @@
     .topnav {
       overflow: hidden;
       /* tekst bliver ikke vist hvis det går ud over kanten*/
-      background-color: #333;
+      background-color: #436475;
     }
 
     /* Style the topnav links */
@@ -41,7 +45,7 @@
       float: left;
       display: inline-block;
       /* linkene fylder hele linjen*/
-      color: #f2f2f2;
+      color: white;
       text-align: center;
       padding: 14px 16px;
       text-decoration: none;
@@ -57,6 +61,8 @@
     /* Create two unequal columns that floats next to each other */
     /* Left column */
     .leftcolumn {
+      overflow: hidden;
+
       float: left;
       width: 75%;
     }
@@ -64,8 +70,10 @@
     /* Right column */
     .rightcolumn {
       float: left;
+      overflow: hidden;
+
       width: 25%;
-      background-color: #f1f1f1;
+      background-color: #9DADB5;
       padding-left: 20px;
     }
 
@@ -117,69 +125,94 @@
         width: 100%;
       }
     }
+
+    /*Style-id til ryslogo'et */
+    #image {
+      position: absolute;
+      right: 27px;
+      top: 28px;
+      max-width: 20%;
+      max-height: 20%;
+    }
+
+    #slogan {
+      position: relative;
+      top: -20px;
+    }
   </style>
 </head>
 
 <body>
-
   <div class="header">
-    <h1>Our HoMeSiTe :)</h1>
-    <p>Du skal vælge informatik...</p>
+    <h1 title=hej>Talentudvikling på Rys</h1>
+    <p id="slogan">For dig med ambitioner</p>
+    <a href="https://rysensteen.dk/" target="_blank" rel="noreferrer noopener" title="rysensteen Gymnasiums Hjemmeside"><img id="image" src="logo2.jpg"></img></a>
   </div>
 
   <div class="topnav">
     <a href="index.html">Hjem</a>
-    <a href="site2.html">side2</a>
-    <a href="https://rysensteen.dk/" target="_blank" rel="noreferrer noopener">Rysensteen</a>
-    <a href="http://mpsteenstrup.dk/" rel="noreferrer noopener">MPhjemmeside</a>
-    <a href="#" style="float:right">Link</a>
+    <a href="udveksling.html">Udveksling</a>
+    <a href="site2.html">Scienceaktiviteter</a>
+    <a href="https://rysensteen.dk/" target="_blank" rel="noreferrer noopener" style="float:right">Rysensteen</a>
   </div>
+
+
 
   <div class="row">
     <div class="leftcolumn">
       <div class="card">
-        <h2>TITLE HEADING</h2>
-        <h5>Title description, Dec 7, 2017</h5>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/LanCLS_hIo4?start=2" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <h2 style="color:#436475"><img src="https://pbs.twimg.com/profile_images/809695874775392257/sBMsb417.jpg" alt="science" style="float:left;width:24px;height:24px;">Science Talenter</h2>
+        <p>I løbet af de tre dage (to overnatninger) bliver du udfordret inden for forskellige faglige science-emner.</p>
+        <p>Du kommer til at arbejde i laboratorie, nørde med teknologi og bruge både dine matematiske og kreative evner. Og måske vil du <br>også føle dig udfordret, når vi beder dig præsentere, hvad I har arbejdet med i din gruppe. Når du er på camp hos Science Talenter, <br>får du styrket både dine faglige og studiemæssige kompetencer. Men du får med garanti også mulighed for at opdyrke et fedt netværk <br>med andre unge, som synes science er sjovt!<p>
+        <p> Der er forskellige typer programmer: <p>
+
+          <ul>
+            <li>Biotek</li>
+            <li>Fysik-Matematik</li>
+            <li>Fremtidsteknologi</li>
+            <li>Kemi</li>
+            <li>Klima</li>
+            <li>Rumteknologi</li>
+          </ul>
+
+          <p> Alle programmerne der er listet ovenorver er fordelt ud over tre camps i løbet af 2.g. Der bliver også lavet enkeltstående camps for alle årgange, hvor de blot varer en weekend.<p>
+          <p><a href="https://sciencetalenter.dk/stgymnasie" rel="noreferrer noopener">Mere om Science Talenter</a><p>
+        <img src="https://sciencetalenter.dk/sites/default/files/styles/block-2-3/public/Untitled1_1/ScienceTalenter%20-%20blandet%2021.JPG?itok=Sv75EWRc"></img>
+
+
       </div>
       <div class="card">
-        <h2>TITLE HEADING</h2>
-        <h5>Title description, Sep 2, 2017</h5>
+        <h2 style="color:#436475"><img src="https://media-exp1.licdn.com/dms/image/C4E0BAQHctdfoBjLXYw/company-logo_200_200/0/1572350686748?e=2159024400&v=beta&t=0v2ZwYfCWcIHlqnAboGzJiI7NoHlt7IAm8UiIvcknFc" alt="atu" style="float:left;width:40px;height:40;">Akadamiet for talentfulde Unge</h2>
+        <p>ATU-programmet er et bredt 2-årigt diplomprogram til de dygtigste elever i gymnasiet. Vi tilbyder talenterne forelæsninger <br>på universitetsniveau samt workshops med forskere og topchefer inden for et bredt fagligt felt. <p>Programmet består af:<p>
 
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/xuCn8ux2gbs" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <ul>
+            <li>Forelæsninger oplæg og workshops med førende forskere, opinionsledere, virksomheder og andre eksperter inden <br>for naturvidenskab, samfundsvidenskab og humaniora.</li>
+            <li>Hjælp til studie- og karriereafklaring via besøg på universiteter, organisationer og virksomheder</li>
+            <li>Konkrete studieværktøjer, som f.eks. akademisk opgaveskrivning, skriftlig formidling og præsentationsteknik</li>
+            <li>Personlig udvikling i et stimulerende og udfordrende fagligt og socialt fællesskab med andre unge talenter. </li>
+            <li>Fokus på motivation, mål, samarbejde og feedback.</li>
+          </ul>
 
-        <p>Some text..</p>
-        <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+          <p> Undervisningen foregår efter skole sammen med hundredvis af videbegærlige og skarpe unge hjerner og hjerter. I alt 100 <br>obligatoriske timer inkl. en camp samt mulighed for at vælge en lang række enkeltstående oplæg i vores valgfrie program. <p><a href="https://talentfuldeunge.dk/" rel="noreferrer noopener">Mere om ATU</a><p>
+            <img src="https://www.sdu.dk/-/media/images/uddannelse/brobygning/atu.jpg"></img>
+
       </div>
     </div>
     <div class="rightcolumn">
       <div class="card">
-        <h2>About Me</h2>
-        <div class="fakeimg" style="height:100px;">Image</div>
-        <p>Some text about me in culpa qui officia deserunt mollit anim..</p>
+        <h2 style="color:#436475">Hvad er talent?</h2>
+        <p>Talent er en særlig kompetencer, der bygger på både medfødte og erhvervede evner og på <b>lyst</b> og <b>vilje</b> til at udvikle og udnytte sit potentiale</p>
       </div>
       <div class="card">
-        <h3>Popular Post</h3>
-        <div class="fakeimg">
-          <p>Image</p>
-        </div>
-        <div class="fakeimg">
-          <p>Image</p>
-        </div>
-        <div class="fakeimg">
-          <p>Image</p>
-        </div>
-      </div>
-      <div class="card">
-        <h3>Follow Me</h3>
-        <p>Some text..</p>
-      </div>
-    </div>
-  </div>
+        <h3 style="color:#436475">Projekt Forskerspire</h3>
+        <p>Projekt Forskerspirer er en konkurrence, der løber over et år. I slutningen af oktober afleverer forskerspirerne en synopsis til et forskningsprojekt. <br>En dommerkomité udvælger de tre bedste projekter inden for hver af kategorierne: <br><i>HUM, NAT, SAMF og SUND.</i> <br>De 12 nominerede projekter præsenteres ved en festlighed i december. Her bliver en vinder i hver af de fire kategorier kåret som årets forskerspire. Vinderne kåres på skift af undervisnings- og uddannelsesministeren, og de modtager hver <i>20.000 kr.</i> til at udføre deres projekt.<p>
+        <p><a href="https://forskerspirer.ku.dk/" rel="noreferrer noopener">Mere om Forskerspirer</a> <p>
+          <img src="forsker.png"></img>
 
-  <div class="footer">
-    <h2>Footer</h2>
-  </div>
+
+
+
+      
 
 </body>
 

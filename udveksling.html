@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <!--gør så man bruger alfabet med æøå-->
+
+  <style>
+    /* sætter størrelsen af boksene, ja størrelsen af boksene, dvs. ingen margener osv. så to bokse kan støde helt op til hinanden. */
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial;
+      padding: 10px;
+      /* Hele hjemmesidens baggrundsfarve */
+      background: #9DADB5;
+    }
+
+    /* Header/Blog Title */
+    .header {
+      padding: 30px;
+      text-align: center;
+      background: #;
+      background-image: url('blue.jpg');
+      max-height: 180px;
+      font-family: times;
+      color: white;
+    }
+
+    /* sætter h1 i header klassen til fontsize 50px*/
+    .header h1 {
+      font-size: 50px;
+    }
+
+    /* Style the top navigation bar */
+    .topnav {
+      position: sticky;
+      top: 0px;
+      overflow: hidden;
+      /* tekst bliver ikke vist hvis det går ud over kanten*/
+      background-color: #436475;
+    }
+
+    /* Style the topnav links */
+    .topnav a {
+      float: left;
+      display: inline-block;
+      /* linkene fylder hele linjen*/
+      color: #f2f2f2;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+      /* fjerner understregen på link*/
+    }
+
+    /* Change color on hover */
+    .topnav a:hover {
+      background-color: #ddd;
+      color: black;
+    }
+
+    /* Create two unequal columns that floats next to each other */
+    /* Left column */
+    .leftcolumn {
+      float: left;
+      width: 75%;
+    }
+
+    /* Right column */
+    .rightcolumn {
+      float: left;
+      width: 25%;
+      background-color: #f1f1f1;
+      padding-left: 20px;
+    }
+
+    /* Fake image */
+    .fakeimg {
+      background-color: #aaa;
+      width: 100%;
+      padding: 20px;
+    }
+
+    /* Add a card effect for articles */
+    .card {
+      background-color: white;
+      padding: 20px;
+      margin-top: 20px;
+    }
+
+    /* Clear floats after the columns*/
+    /* danner en klasse til begge kolonner */
+    .row:after {
+      content: "";
+      display: block;
+      clear: both;
+      /* rydder efter begge */
+    }
+
+    /* Footer */
+    .footer {
+      padding: 20px;
+      text-align: center;
+      background: #ddd;
+      margin-top: 20px;
+    }
+
+    /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+    @media screen and (max-width: 800px) {
+
+      .leftcolumn,
+      .rightcolumn {
+        width: 100%;
+        padding: 0;
+      }
+    }
+
+    /* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+    @media screen and (max-width: 400px) {
+      .topnav a {
+        float: none;
+        width: 100%;
+      }
+    }
+
+    /*Style-id til ryslogo'et */
+    #image {
+      position: absolute;
+      right: 27px;
+      top: 28px;
+      max-width: 20%;
+      max-height: 20%;
+    }
+
+    #slogan {
+      position: relative;
+      top: -20px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="header">
+    <h1 title=hej>Talentudvikling på Rys</h1>
+    <p id="slogan">For dig med ambitioner</p>
+    <a href="https://rysensteen.dk/" target="_blank" rel="noreferrer noopener" title="rysensteen Gymnasiums Hjemmeside"><img id="image" src="logo2.jpg"></img></a>
+  </div>
+
+  <div class="topnav">
+    <a href="index.html">Hjem</a>
+    <a href="udveksling.html">Udveksling</a>
+    <a href="site2.html">Scienceaktiviteter</a>
+    <a href="https://rysensteen.dk/" target="_blank" rel="noreferrer noopener" style="float:right">Rysensteen</a>
+  </div>
+
+  <div class="card">
+    <h2 style="color:#436475">Haag-Udveksling (1.G)</h2>
+    <img src="https://rysensteen.dk/sites/default/files/17976381_599159266959144_359427357_o%20%281%29_0.jpg" style="overflow: hidden; max-width: 100%;"></img>
+    <p>På Rysensteen Gymnasium har alle 1.G-elever muligheden for at deltage i
+      Haag-udvekslingsprogrammet. Udveksling med Vrijzinnig Christelijk Lyceum i
+      Haag er et spændende projekt, der startede i 2010. Det foregår på den måde
+      at ca. 12 elever melder sig til at deltage fra hvert land. Tolv 1g-elever
+      fra alle studieretninger rejser i november måned til Haag for i samarbejde
+      med 12 hollandske gymnasieelever at formulere og gennemføre et samfundsfagligt
+      projekt. Eleverne bor hos de hollandske elever. I april kommer de hollandske
+      elever så på genbesøg i København, hvor det fælles projekt færdiggøres og
+      præsenteres for lærere og klassekammerater. I tiden mellem de to besøg
+      samarbejder eleverne i grupper af fire med to danskere og to hollændere
+      via netmedier.
+      Under besøget kommer man til at bo hos en hollænder fra partnerskolen
+      i Haag. Det er således en unik mulighed at lære en ny kultur at kende i
+      dybden frem for den overfladiske oplevelse man kan få af et land hvis man
+      ikke omgiver sig med folk der kender stedet.</p>
+  </div>
+
+  <div class="card">
+    <h2 style="color:#436475">Sprogudveksling (2.G)</h2>
+    <img src="https://rysensteen.dk/sites/default/files/styles/skaler_bredde550/public/dortmund3.jpg?itok=FDlDErc7" alt="HTML5" style="display:block; margin-right:auto; margin-left:auto; width:50%;"></img>
+    <p>I 2.G får alle elever muligheden for at udfolde sig yderligere på deres
+      2. fremmedsprog i form af en sprog- og kulturudveksling med elever fra
+      Rysensteen Gymnasiums partnerskole i Dortmund i Nordrhin-Vestfalen eller
+      i St Brieuc der ligger i Bretagne. Ligesom med Haag-udvekslingen er det
+      en enestående mulighed for at lære en indholdsrig kultur at kende.</p>
+  </div>
+
+  <div class="card">
+    <h2 style="color:#436475">Generelle fordele ved udvekslingsprogrammerne</h2>
+    <p>Generelt for langt de fleste udvekslingsprogrammer på Rysensteen
+      Gymnasium er at de ligger i et prislege inden for 1000 kr.-1400 kr.
+      Det er således meget billigt da alle kost- og logiomkostninger er dækket
+      for en hel uge. <br> <br>
+
+      Udnyt de enestående muligheder for udveksling på Rysensteen Gymnasium!
+    </p>
+  </div>
+
+
+</body>

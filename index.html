@@ -14,15 +14,20 @@
     body {
       font-family: Arial;
       padding: 10px;
-      /* margen omkring tekst */
-      background: #f1f1f1;
+      /* Hele hjemmesidens baggrundsfarve */
+      background: #9DADB5;
     }
 
     /* Header/Blog Title */
     .header {
       padding: 30px;
       text-align: center;
-      background: rgb(17, 168, 141);
+      background: #;
+      background-image: url('blue.jpg');
+      max-height: 180px;
+      font-family: times;
+      color: white;
+
     }
 
     /* sætter h1 i header klassen til fontsize 50px*/
@@ -32,9 +37,11 @@
 
     /* Style the top navigation bar */
     .topnav {
+      position: sticky;
+      top: 0px;
       overflow: hidden;
       /* tekst bliver ikke vist hvis det går ud over kanten*/
-      background-color: #333;
+      background-color: #436475;
     }
 
     /* Style the topnav links */
@@ -66,7 +73,7 @@
     .rightcolumn {
       float: left;
       width: 25%;
-      background-color: #f1f1f1;
+      background-color: #9DADB5;
       padding-left: 20px;
     }
 
@@ -118,71 +125,103 @@
         width: 100%;
       }
     }
+
+    /*Style-id til ryslogo'et */
+    #image {
+      position: absolute;
+      right: 27px;
+      top: 28px;
+      max-width: 20%;
+      max-height: 20%;
+    }
+
+    #slogan {
+      position: relative;
+      top: -20px;
+    }
   </style>
 </head>
 
 <body>
 
   <div class="header">
-    <h1>Our HoMeSiTe :)</h1>
-    <p>Du skal vælge informatik...</p>
+    <h1 title=hej>Talentudvikling på Rys</h1>
+    <p id="slogan">For dig med ambitioner</p>
+    <a href="https://rysensteen.dk/" target="_blank" rel="noreferrer noopener" title="rysensteen Gymnasiums Hjemmeside"><img id="image" src="logo2.jpg"></img></a>
   </div>
 
   <div class="topnav">
     <a href="index.html">Hjem</a>
-    <a href="site2.html">side2</a>
-    <a href="https://rysensteen.dk/" target="_blank" rel="noreferrer noopener">Rysensteen</a>
-    <a href="http://mpsteenstrup.dk/" rel="noreferrer noopener">MPhjemmeside</a>
-    <a href="#" style="float:right">Link</a>
+    <a href="udveksling.html">Udveksling</a>
+    <a href="site2.html">Scienceaktiviteter</a>
+    <a href="https://rysensteen.dk/" target="_blank" rel="noreferrer noopener" style="float:right">Rysensteen</a>
   </div>
 
   <div class="row">
     <div class="leftcolumn">
       <div class="card">
-        <h2>TITLE HEADING</h2>
-        <h5>Title description, Dec 7, 2017</h5>
-        <img src="https://netspirit.dk/od/images/pagemaster/IMG_00001568.jpg"></img>
-        <p>&#128511; Det virker ved at vi bruger et "alfabet" der hedder UTF-8, som er det normale alfabet man bruger når man skriver HTML. Så f.eks A er 65 og 😄 er 128516.</p>
-        <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+        <h2 style="color:#436475">Rysensteen Gymnasium som Profilskole</h2>
+
+        <p>Rysensteen Gymnasium er en internationalt orienteret profilskole. Alle skolens elever gennemløber som en del af deres <br>gymnasieuddannelse skolens internationale program – Global Citizenship Programme, hvilket betyder, at alle som en del
+          af <br>almendannelsen får en udbredt kulturforståelse og en grundlæggende viden om globalisering og verdensborgerskab.
+        <p>
+
+        <p>Skolen er også meget værdiorienteret med en stærk demokratisk omgangsform, hvilket betyder, at eleverne i udpræget grad <br>engagerer sig i skolens liv også udenfor undervisningen.
+          Elevrådet arbejder selvstyrende og målrettet involverende med <br>nedsættelse af arbejdsgrupper og prioritering af indsatser, mens et væld af autonome udvalg organiserer et kulturbåret elevmiljø.
+        <p>
+
+        <p>Arbejdet med internationalisering har stor betydning for aktiviteterne på Rysensteen Gymnasium. Alle klasser har en partnerskole <br>et sted i verden og gennem de tre gymnasieår arbejdes der i fagene tilbagevendende med et internationalt
+          perspektiv inspireret af partnerskolens beliggenhed. Alle skolens klasser har udveksling med partnerskolens elever. Samtidig med dette er der mange andre internationale tilbud for både hold og enkeltelever. Skolens fokus er, at eleverne
+          skal udvikle ikke blot et medborgerskab men også et verdensborgerskab gennem deres gymnasietid. Se mere om dette under både profil og internationalisering.
+        <p>
+
+        <p> <b>Rysensteens partnerskoler:</b>
+            <p>
+              <img src="verden.png"></img>
       </div>
+
       <div class="card">
-        <h2>TITLE HEADING</h2>
-        <h5>Title description, Sep 2, 2017</h5>
+        <h2 style="color:#436475">Morgensamling</h2>
+        <p>På Rysensteen Gymnasium holdes der morgensamling en gang om måneden.
+          Her har alle skolens udvalg en mulighed for at komme til orde. <br>
+          Det er også her der orienteres om vedtægter eller anden information
+          fra skolens ledelse. Til sidste sluttes der af med det altid så hyggelige
+          sig det med blomster hvor ryssere giver deres følelser til udtryk.</p>
 
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/xuCn8ux2gbs" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-        <p>Some text..</p>
-        <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+        <img src="https://rysensteen.dk/sites/default/files/styles/large/public/236-2012_11_23_IMG_3758.JPG?itok=zeLrrb4-" style="display:block; margin-right:auto; margin-left:auto; width:60%;"></img>
       </div>
     </div>
     <div class="rightcolumn">
-      <div class="card">
-        <h2>Spørgeskema</h2>
-        <div class="fakeimg" style="height:100px;">Image</div>
-        <a href="https://docs.google.com/forms/d/e/1FAIpQLSdc_Oy3woHUdhqVw7f6A12GZQjpW8Hhf4-bxmQPnpt4QQBbQQ/viewform?usp=sf_link">Hjem</a>
-      </div>
-      <div class="card">
-        <h3>Popular Post</h3>
-        <div class="fakeimg">
-          <p>Image</p>
-        </div>
-        <div class="fakeimg">
-          <p>Image</p>
-        </div>
-        <div class="fakeimg">
-          <p>Image</p>
-        </div>
-      </div>
-      <div class="card">
-        <h3>Follow Me</h3>
-        <p>Some text..</p>
-      </div>
-    </div>
-  </div>
 
-  <div class="footer">
-    <h2>Footer</h2>
-  </div>
+      <div class="card">
+        <h3 style="color:#436475">Studieretninger</h3>
+        <p>Alle studieretninger på STX rummer op mod 70 % obligatoriske fag. Når vi alligevel omtaler studieretningerne som centrale, skyldes det, at de obligatoriske fag i udpræget grad tones efter de studieretningsfag, som du vælger. Derfor skal du
+          vælge efter din interesse og dine evner.
+        <p>
+
+        <p> Rysensteen tilbyder disse studieretninger:
+        <p>
+          <li> Musik og Engelsk </li>
+          <li> Samfundsfag og Engelsk</li>
+          <li> Samfundsfag og Matematik</li>
+          <li> Fysik og Matematik</li>
+          <li> Almen science</li>
+          <li> Bioteknologi og Matematik</li>
+
+        <p><a href="https://rysensteen.dk/vb/studieretninger" rel="noreferrer noopener">Studieretninger</a>
+        <p>
+      </div>
+
+      <div class="card">
+        <h2 style="color:#436475">Kontakt</h2>
+        <p> Rysensteen Gymnasium <br>
+          Tietgensgade 74 <br>
+          1704 København V <br>
+          Tel: 33 24 43 11 <br>
+          Email: <a href="malito:mail@rysensteen.dk" rel="noreferrer noopener">mail@rysensteen.dk</a> <br>
+          CVR-nr: 29542708
+        </p>
+      </div>
 
 </body>
 
